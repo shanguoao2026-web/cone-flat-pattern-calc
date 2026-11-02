@@ -1,0 +1,17 @@
+{
+  "name": "cone-flat-pattern-calc",
+  "version": "1.0.0",
+  "description": "Calculate sheet-metal cone and frustum flat patterns",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "bin": { "cone-flat-pattern-calc": "dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepack": "npm run build"
+  },
+  "devDependencies": { "@types/node": "^18.19.0", "typescript": "^5.7.0" }
+}
